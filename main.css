@@ -1,7 +1,5 @@
-/*  Import google font */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap");
 
-/* Page styling */
 * {
   margin: 0;
   padding: 0;
@@ -15,7 +13,6 @@ body {
   background-color: #fff;
 }
 
-/* Scroll bar styling */
 ::-webkit-scrollbar {
   width: 6px;
 }
@@ -29,7 +26,6 @@ body {
   background: #444;
 }
 
-/* Sections common styling */
 section {
   padding: 100px 0;
 }
@@ -116,7 +112,6 @@ section .titlet::before {
   transform: translateX(-50%);
 }
 
-/* Navbar styling */
 .navbar {
   position: fixed;
   width: 100%;
@@ -177,7 +172,6 @@ section .titlet::before {
   width: 70%;
 }
 
-/* Menu button styling */
 .menu-btn {
   color: #fff;
   font-size: 23px;
@@ -212,7 +206,6 @@ section .titlet::before {
   filter: brightness(90%);
 }
 
-/* Home section styling */
 .home {
   display: flex;
   background: url("Images/main_bg.jpg") no-repeat center;
@@ -256,7 +249,6 @@ section .titlet::before {
   font-weight: 500;
 }
 
-/* About me section styling */
 .about {
   background-color: #000;
 }
@@ -301,7 +293,6 @@ section .titlet::before {
   background-image: linear-gradient(315deg, #1fd1f9 0%, #b621fe 74%);
 }
 
-/* Education section styling*/
 .education {
   height: 800px;
 }
@@ -335,7 +326,6 @@ section .titlet::before {
   color: #000;
 }
 
-/*Education text transitions */
 .education .education-content .right p {
   display: flex;
   align-items: center;
@@ -411,7 +401,6 @@ section .titlet::before {
   animation: 2s counterclockwise infinite;
 }
 
-/* Animations for education text box */
 @keyframes clockwise {
   0% {
     top: -5px;
@@ -490,7 +479,6 @@ section .titlet::before {
   }
 }
 
-/* Certficates & Badges section styling */
 .certs-badges {
   background-color: #000;
   height: 800px;
@@ -606,7 +594,6 @@ section .titlet::before {
   background: rgb(126, 0, 126) !important;
 }
 
-/* Projects section styling */
 .projects {
   height: 800px;
 }
@@ -822,7 +809,6 @@ section .titlet::before {
   overflow: hidden;
 }
 
-/* Animations for hover effect on projects */
 @-webkit-keyframes ani {
   from {
     -webkit-mask-position: 0 0;
@@ -864,7 +850,6 @@ section .titlet::before {
   }
 }
 
-/* Contact me styling */
 .contact .contact-content .column {
   width: calc(50% - 30px);
 }
@@ -904,7 +889,6 @@ section .titlet::before {
   color: #fff;
 }
 
-/* Social Media styling*/
 .wrapper {
   position: relative;
   top: 150px;
@@ -989,7 +973,6 @@ section .titlet::before {
   color: #000;
 }
 
-/* footer section styling*/
 footer {
   background: #fff;
   padding: 15px 23px;
@@ -1006,7 +989,6 @@ footer span a:hover {
   text-decoration: underline;
 }
 
-/* Responsive styling for several screens */
 @media (max-width: 1920px) and (min-width: 1320px) {
   .button-container-1 {
     position: relative;
@@ -1044,7 +1026,6 @@ footer span a:hover {
   }
 }
 
-/* Responsive for Ipad pro */
 @media (max-width: 1025px) and (min-width: 946px) {
   .menu-btn {
     display: block;
@@ -1272,7 +1253,6 @@ footer span a:hover {
   }
 }
 
-/* Responsive styling for Ipad */
 @media (max-width: 769px) and (min-width: 722px) {
   .menu-btn {
     display: block;
@@ -1734,7 +1714,6 @@ footer span a:hover {
   }
 }
 
-/* Responsive styling for Iphone 6/7/8 plus */
 @media (max-width: 415px) and (min-width: 400px) {
   .menu-btn {
     display: block;
@@ -1915,7 +1894,6 @@ footer span a:hover {
   }
 }
 
-/* Responsive styling for Iphone 12,X,6,7,8*/
 @media (max-width: 400px) {
   .home {
     background: url("Images/main_bg.jpg") no-repeat center;
@@ -2138,4 +2116,3 @@ footer span a:hover {
     right: -33px;
   }
 }
-/* End of responsive styling */
