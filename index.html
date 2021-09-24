@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anushka's Portfolio</title>
+    <!-- Importing Css file -->
+    <link rel="stylesheet" href="main.css" />
+    <!-- Importing the icon for website title -->
+    <link rel="icon" href="title_bar.ico" />
+    <!-- Importing css & javascript libraries for icons, owl carousel, font and sliding jquery -->   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="'https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap'" />
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+</head>
+<body>
+    <!-- Navbar start -->
+    <nav class="navbar">
+        <div class="max-width">
+            <div class="logo"><a href="#home">Port<span>folio.</span></a></div>
+            <ul class="menu">
+                <li><a href="#home" class="menu-btn">Home</a></li>
+                <li><a href="#about" class="menu-btn">About Me</a></li>
+                <li><a href="#education" class="menu-btn">Education</a></li>
+                <li><a href="#certs-badges" class="menu-btn">Certificates & Badges</a></li>
+                <li><a href="#projects" class="menu-btn">Projects</a></li>
+                <li><a href="#contact" class="menu-btn">Contact Me</a></li>
+            </ul>
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar end -->
+    
+    <!-- Home start -->
+    <section class="home" id="home">
+        <div class="max-width">
+            <div class="home-content">
+                <div class="text-1">Hello, my name is</div>
+                <div class="text-2">Anushka Patil</div>
+                <div class="text-3"> <span class="typing"></span></div>
+            </div>
+        </div>
+    </section>
+    <!-- Home end -->
+
+    <!-- About me start -->
+    <section class="about" id="about">
+        <div class="max-width">
+            <h2 class="title title1">About me</h2>
+            <div class="about-content">
+                <div class="column left">
+                    <img src="Images/aboutme.JPEG" alt="My Picture">
+                </div>
+                <div class="column right">
+                    <div class="text">Hey, I'm<span class="name"> Anushka</span> </div>
+                    <p>My interest in the domain of Data Science, stems from my love for Statistics.
+                        The beauty of drawing useful insights from random numbers is analogous to deriving knowledge
+                        from raw data.
+                        I have been fortunate enough to have the opportunity to enroll myself in plenty of electives
+                        like Applied
+                        Statistical Methods, Operations Research, Data Mining, Information Retrieval, Number theory,
+                        Fundamentals
+                        of Data Science etc. at BITS which helped me deepen my interest further. <br><br>There is
+                        nothing that entices me
+                        more than a neatly organized set of data and the process of extracting patterns out of it. To
+                        further learn
+                        and develop my skills as a Data Scientist, I am currently enrolled as a graduate student at the
+                        University
+                        of Washington. In the long run, I would like to associate with people having similar interests
+                        and leverage
+                        my skills in solving real-world dynamic problems.
+                    </p><br>
+                    <p>
+                        Work Experience:<br><br>
+                        1. Software Intern at TechRobotix (Jun 2019 - Aug 2019) :<br>
+                        • Using C# scripting language, developed a game based on Escape Room concept on the Unity game engine.<br>
+                        • Worked on Intuiface and built applications on Windows platform according to the customer’s needs.<br>
+                        • Maintained their customer and product databases.<br><br>
+                        2. Business Executive at iB Hubs (Oct 2018 - Nov 2018) : <Br>
+                        • Customer Facing: Used HTC Vive to bring the virtual sports experience, live to audience.<br>
+                        • Interacted with people from varied backgrounds, pitched about the concept and sought for business opportunities. <br><br>
+                        3. Student Placement Coordinator at Birla Institute of Technology and Science, Dubai Campus (Jan 2020 - Aug 2020) : <br> 
+                        • Researching career websites of companies and interacting with their HR/ recruitment managers to know about their
+                        recruitment plans and encouraged student involvement in career services.               
+                    
+                    </p>
+                    <a href="https://www.dropbox.com/s/98z7dsdbvy9qnbi/Anushka%27s%20Resume.pdf?dl=0"
+                        target="_blank">Download Resume</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About me end -->
+
+    <!-- Education start -->
+    <section class="education" id="education">
+        <div class="max-width">
+            <h2 class="title title2">Education</h2>
+            <div class="education-content">
+                <div>
+                    <div class="column left">
+                        <img src="Images/bitslogo.jpg" alt="BITS Logo">
+                        <p>BITS Pilani, UAE <br>2017-2021<br>Btech. Computer Science<br>CGPA: 9.73/10</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="column right">
+                        <img src="Images/uwlogo.png" alt="UW Logo">
+                        <p>University of Washington<br>Seattle, Washington<br>Fall'21-Winter'23<br>Masters in Data
+                            Science </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Education end -->
+
+    <!--  Certificates & Badges start -->
+    <section class="certs-badges" id="certs-badges">
+        <div class="max-width">
+            <h2 class="titlec title1">Certificates and Badges</h2>
+            <div class="carousel owl-carousel">
+
+                <button class="card credly_button" onclick="credly()">
+                    <div class="box">
+                        <img src="Images/credly.png" class="credly_img" alt="Credly Icon">
+                        <div class="credly_text">Credly</div>
+                        <p class="credly_p">Click here to check my badges! </p>
+                    </div>
+                </button>
+                
+                <div class="card">
+                    <div class="box">
+                        <img src="Images/coursera.png" alt="Coursera Icon">
+                        <div class="text">IBM Data Science Professional</div>
+                        <p>Coursera: Issued June 2020</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="box">
+                        <img src="Images/coursera.png" alt="Coursera Icon">
+                        <div class="text">Data Analysis with Python</div>
+                        <p>Coursera: Issued June 2020</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="box">
+                        <img src="Images/coursera.png" alt="Coursera Icon">
+                        <div class="text">Data Visualization with Python</div>
+                        <p>Coursera: Issued June 2020</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="box">
+                        <img src="Images/coursera.png" alt="Coursera Icon">
+                        <div class="text">Databases and SQL for Data Science</div>
+                        <p>Coursera Issued May 2020</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="box">
+                        <img src="Images/coursera.png" alt="Coursera Icon">
+                        <div class="text">Python for Data Science and AI</div>
+                        <p>Coursera Issued April 2020</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="box">
+                        <img src="Images/coursera.png" alt="Coursera Icon">
+                        <div class="text">Machine Learning with Python</div>
+                        <p>Coursera Issued June 2020</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="box">
+                        <img src="Images/internshala.jpg" alt="Internshala Icon">
+                        <div class="text">Programming with Python</div>
+                        <p>Internshala Issued August 2018</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="box">
+                        <img src="Images/internshala.jpg" alt="Internshala Icon">
+                        <div class="text">Advanced Excel</div>
+                        <p>Internshala Issued July 2018</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="box">
+                        <img src="Images/internshala.jpg" alt="Internshala Icon">
+                        <div class="text">Digital Marketing</div>
+                        <p>Internshala: Issued August 2018</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!--  Certificates & Badges end -->
+
+    <!-- Projects start -->
+    <section class="projects" id="projects">
+        <div class="max-width">
+            <h2 class="title2 titlep">Projects</h2>
+            <div style="text-align: center;position: relative;top: -25px;font-weight: 500;">Click on the projects to know more!</div>
+            <div class="button-container-1">
+                <span class="after_hover"><br><span class="projects_heading">Thesis - Facial Emotion Recognition
+                    </span> <span class="projects_date"><br>(September 2020 – January 2021)</span><br><br>
+                    Facial Emotion Recognition System for analysis of customer satisfaction in retail (Deep
+                    Learning)<br>
+                    Several challenges in the analysis of facial expressions include accommodation of factors such as
+                    age, race
+                    etc. The expression of the client/customer being served at the counter is captured to predict the
+                    level of
+                    satisfaction. In this research work, I have used the FER2013 dataset available to fine tune three
+                    models.
+                    ResNet-50 was found to have the best accuracy of 71.2%.
+                </span>
+                <button type="button" onclick="project1()" name="Hover"></button>
+            </div>
+
+            <div class="button-container-2">
+                <span class="after_hover"><br><BR><span class="projects_heading">Credit Card Fraud Detection
+                    </span><span class="projects_date"><br>(2020/ 6th sem)</span><br><br><br>
+                    Implemented Naïve Bayes, K-Nearest Neighbor and Logistic Regression algorithms to choose the
+                    best model to classify a transaction as fraudulent or legitimate<br><br>
+
+                    Used the real-life dataset made available on Kaggle for the research.</span>
+                <button type="button" onclick="project2()" target="_blank" name="Hover"></button>
+            </div>
+
+            <div class="button-container-3">
+                <span class="after_hover">
+                    <br><span class="projects_heading">Battle of Neighborhood</span> <span
+                        class="projects_date"><br>(2020) </span><br><br>
+                    Built a Recommender System for expats looking for a family friendly neighborhoods in Downtown
+                    Toronto.<br> <br>
+                    Using three datasets, namely: List of all neighborhoods ond boroughs, <br>geospatial data and data
+                    about
+                    venues obtained using FourSquare API. 5 best neighborhoods were predicted based on their proximity
+                    to family friendly <br>venues using K-Means clustering.
+                </span>
+                <button type="button" onclick="project3()" name="Hover"></button>
+            </div>
+
+            <div class="button-container-4">
+                <span class="after_hover"><Br><span class="projects_heading">Health Insurance Bill Prediction for
+                        regions of USA </span><span class="projects_date"><br>(2020/6th sem)</span><br>
+                    A project based on factors such as age, sex, bmi, number of kids etc. <br> which will help in
+                    predicting the cost of the medical bills using a model implementing multiple regression.
+                    <br><bR>
+                    This would be a helpful prediction analysis as healthcare costs are rising as we move ahead in time
+                    and no matter what, these costs are unavoidable.
+
+                </span>
+                <button type="button" onclick="project4()" name="Hover"></button>
+            </div>
+
+            <div class="button-container-5">
+                <span class="after_hover"><br><br><span class="projects_heading">Mobile Application Rating Prediction
+                    </span><br><span class="projects_date"> (2020/6th sem)</span><br><br><br>
+                    A Linear Regression model was built to predict the rating and success of an application based on
+                    factors such as the price, version, category etc.<br> of an application.</span>
+                <button type="button" onclick="project5()" name="Hover"></button>
+                </div>
+
+        </div>
+    </section>
+    <!-- Projects end -->
+
+    <!-- Contact start -->
+    <section class="contact" id="contact">
+        <div class="max-width">
+            <h2 class="titlet title1">Contact Me</h2>
+            <div class="contact-content">
+                <div class="text">Get in Touch</div>
+                <p>If you think you might have an opportunity for me, please feel free to reach out to me on the contact information provided below !</p>
+                <div class="icons">
+                    <div class="row">
+                        <i class="fas fa-user-graduate"></i>
+                        <div class="info">
+                            <div class="head" style="position: relative;left: 1px;">Name</div>
+                            <div class="sub-title" style="position: relative;left: 1px;">Anushka Patil</div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <i class="fas fa-map-marked-alt" style="position: relative; left: -3px;"></i>
+                        <div class="info">
+                            <div class="head" style="position: relative; left:-5px">Address</div>
+                            <div class="sub-title" style="position: relative; left:-5px">Seattle, Washington, USA</div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <i class="fas fa-at" style="position: relative; left: -3px;"></i>
+                        <div class="info">
+                            <div class="head" style="position:relative;left: -1px;">Email</div>
+                            <div class="sub-title" style="position:relative;left: -1px;">anushkapatil2399@gmail.com
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Social Media-->
+                <div class="wrapper">
+                    <div class="button">
+                        <div class="icon">
+                            <a href="https://www.linkedin.com/in/anushka-patil-306038128/" target="_blank"><i
+                                    class="fab fa-linkedin"></i></a>
+                        </div>
+                        <a href="https://www.linkedin.com/in/anushka-patil-306038128/"
+                            target="_blank"><span>LinkedIn</span></a>
+                    </div>
+
+                    <div class="button">
+                        <div class="icon">
+                            <a href="https://www.instagram.com/anu.sh.ka.patil/" target="_blank"><i
+                                    class="fab fa-instagram"></i></a>
+                        </div>
+                        <a href="https://www.instagram.com/anu.sh.ka.patil/" target="_blank"><span>Instagram</span></a>
+                    </div>
+
+                    <div class="button">
+                        <div class="icon">
+                            <a href="https://github.com/anushka012399" target="_blank"><i class="fab fa-github"></i></a>
+                        </div>
+                        <a href="https://github.com/anushka012399" target="_blank"><span>Github</span></a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact end  -->   
+    <!-- footer start -->
+    <footer>
+        <span>Created By <a href="https://www.linkedin.com/in/atharv-patil-936466206/" target="_blank">Atharv Patil</a>
+            | <a href="https://www.linkedin.com/in/gaurav-bhanot-377947b2/" target="_blank">Gaurav Bhanot</a> </span>
+    </footer>
+    <!-- footer end -->
+
+    <!-- Importing javascript file -->
+    <script src="script.js"></script>
+</body>
+</html>
