@@ -1,5 +1,7 @@
+/*  Import google font */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap");
 
+/* Page styling */
 * {
   margin: 0;
   padding: 0;
@@ -13,6 +15,7 @@ body {
   background-color: #fff;
 }
 
+/* Scroll bar styling */
 ::-webkit-scrollbar {
   width: 6px;
 }
@@ -26,6 +29,7 @@ body {
   background: #444;
 }
 
+/* Sections common styling */
 section {
   padding: 100px 0;
 }
@@ -36,7 +40,6 @@ section {
 }
 .about,
 .education,
-.skills,
 .certs-badges,
 .projects,
 .contact,
@@ -81,6 +84,16 @@ section .title::before {
   background: rgb(126, 0, 126);
   transform: translateX(-50%);
 }
+section .titlew::before {
+  content: "";
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  width: 310px;
+  height: 3px;
+  background: rgb(126, 0, 126);
+  transform: translateX(-50%);
+}
 section .titlec::before {
   content: "";
   position: absolute;
@@ -112,6 +125,7 @@ section .titlet::before {
   transform: translateX(-50%);
 }
 
+/* Navbar styling */
 .navbar {
   position: fixed;
   width: 100%;
@@ -172,6 +186,7 @@ section .titlet::before {
   width: 70%;
 }
 
+/* Menu button styling */
 .menu-btn {
   color: #fff;
   font-size: 23px;
@@ -206,6 +221,7 @@ section .titlet::before {
   filter: brightness(90%);
 }
 
+/* Home section styling */
 .home {
   display: flex;
   background: url("Images/main_bg.jpg") no-repeat center;
@@ -249,8 +265,9 @@ section .titlet::before {
   font-weight: 500;
 }
 
+/* About me section styling */
 .about {
-  background-color: #000;
+  background-color: #fff;
 }
 .about .about-content .left {
   width: 45%;
@@ -268,7 +285,7 @@ section .titlet::before {
   font-size: 25px;
   font-weight: 600;
   margin-bottom: 10px;
-  color: #fff;
+  color: #000;
 }
 .about .about-content .right .name {
   color: rgb(126, 0, 126);
@@ -276,11 +293,11 @@ section .titlet::before {
 .about .about-content .right p {
   text-align: justify;
   position: relative;
-  color: #fff;
+  color: #000;
 }
 .about .about-content .right a {
   display: inline-block;
-  color: #fff;
+  color: #000;
   font-size: 20px;
   font-weight: 500;
   padding: 10px 30px;
@@ -290,9 +307,55 @@ section .titlet::before {
   transition: all 0.3s ease;
 }
 .about .about-content .right a:hover {
-  background-image: linear-gradient(315deg, #1fd1f9 0%, #b621fe 74%);
+  background-image: linear-gradient(315deg, #ddd6f3 0%, #faaca8 74%);
 }
+/* About me End */
 
+/* Work Experience Start*/
+.work-exp{
+  background-color: #000;
+}
+.container_exp{
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+
+  text-align: center;
+}
+.exp{
+  border-radius: 10% 20% 10% 20%;
+  height: 300px;
+  width: 325px;
+  background-image: linear-gradient(
+    to bottom right,
+    #f7bb97 0%, #d06bff 50%,#faaca8 100%/* ,#d06bff 60%,#ff34d2 100% */
+  );
+  background-size: 200% 200%;
+  animation: movegrad 2.5s infinite alternate;
+;
+  font-size: 17px;
+}
+.exp span{
+  position: relative;
+  top: 40px;
+}
+.h1 ,.h2, .h3{
+  font-weight: 800;
+  position: relative;
+  top:-30px;
+  font-size:18px;
+}
+@keyframes movegrad{
+  from{
+      background-position: 0 0;
+  }
+  to{
+      background-position: 100% 100% ;
+  }
+}
+/* Work Experience End*/
+
+/* Education section styling*/
 .education {
   height: 800px;
 }
@@ -326,6 +389,7 @@ section .titlet::before {
   color: #000;
 }
 
+/*Education text transitions */
 .education .education-content .right p {
   display: flex;
   align-items: center;
@@ -401,6 +465,7 @@ section .titlet::before {
   animation: 2s counterclockwise infinite;
 }
 
+/* Animations for education text box */
 @keyframes clockwise {
   0% {
     top: -5px;
@@ -478,7 +543,9 @@ section .titlet::before {
     right: 0;
   }
 }
+/* Education section end */
 
+/* Certficates & Badges section styling */
 .certs-badges {
   background-color: #000;
   height: 800px;
@@ -593,7 +660,9 @@ section .titlet::before {
 .owl-dot:hover {
   background: rgb(126, 0, 126) !important;
 }
+/* Certficates & Badges section end */
 
+/* Projects section start */
 .projects {
   height: 800px;
 }
@@ -809,6 +878,7 @@ section .titlet::before {
   overflow: hidden;
 }
 
+/* Animations for hover effect on projects */
 @-webkit-keyframes ani {
   from {
     -webkit-mask-position: 0 0;
@@ -849,7 +919,9 @@ section .titlet::before {
     mask-position: 0 0;
   }
 }
+/* Projects section end */
 
+/* Contact me start */
 .contact .contact-content .column {
   width: calc(50% - 30px);
 }
@@ -889,6 +961,7 @@ section .titlet::before {
   color: #fff;
 }
 
+/* Social Media styling*/
 .wrapper {
   position: relative;
   top: 150px;
@@ -972,7 +1045,9 @@ section .titlet::before {
 .wrapper .button .icon a {
   color: #000;
 }
+/* Contact me end */
 
+/* footer section styling*/
 footer {
   background: #fff;
   padding: 15px 23px;
@@ -989,6 +1064,7 @@ footer span a:hover {
   text-decoration: underline;
 }
 
+/* Responsive styling for several screens */
 @media (max-width: 1920px) and (min-width: 1320px) {
   .button-container-1 {
     position: relative;
@@ -1019,13 +1095,21 @@ footer span a:hover {
   }
 }
 
-@media (max-width: 1104px) {
+@media (max-width: 1104px) and (min-width: 1000px) {
   .about .about-content .left img {
     height: 350px;
     width: 350px;
   }
+  .container_exp{
+    display: center;
+    justify-content: space-evenly;
+  }
+  .exp{
+    margin-right: 20px;
+  }
 }
 
+/* Responsive for Ipad pro */
 @media (max-width: 1025px) and (min-width: 946px) {
   .menu-btn {
     display: block;
@@ -1082,6 +1166,18 @@ footer span a:hover {
   }
   .about .about-content .right {
     flex: 100%;
+  }
+  .container_exp{
+    display: grid;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  section .titlew::before{
+    left: 50%;
+    width: 320px;
+  }
+  .exp{
+    margin-bottom: 20px;
   }
   .education {
     height: 1200px;
@@ -1215,6 +1311,18 @@ footer span a:hover {
   .about .about-content .right {
     flex: 100%;
   }
+  .container_exp{
+    display: grid;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  section .titlew::before{
+    left: 50%;
+    width: 318px;
+  }
+  .exp{
+    margin-bottom: 20px;
+  }
   .education {
     height: 1200px;
   }
@@ -1253,6 +1361,7 @@ footer span a:hover {
   }
 }
 
+/* Responsive styling for Ipad */
 @media (max-width: 769px) and (min-width: 722px) {
   .menu-btn {
     display: block;
@@ -1309,6 +1418,18 @@ footer span a:hover {
   }
   .about .about-content .right {
     flex: 100%;
+  }
+  .container_exp{
+    display: grid;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  section .titlew::before{
+    left: 50%;
+    width: 320px;
+  } 
+  .exp{
+    margin-bottom: 20px;
   }
   .education {
     height: 1200px;
@@ -1406,6 +1527,18 @@ footer span a:hover {
   }
   .about .about-content .right {
     flex: 100%;
+  }
+  .container_exp{
+    display: grid;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  section .titlew::before{
+    left: 50%;
+    width: 320px;
+  }
+  .exp{
+    margin-bottom: 20px;
   }
   .education {
     height: 1200px;
@@ -1516,6 +1649,18 @@ footer span a:hover {
   .home .home-content a {
     font-size: 20px;
   }
+  .container_exp{
+    display: grid;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  section .titlew::before{
+    left: 50%;
+    width: 320px;
+  }
+  .exp{
+    margin-bottom: 20px;
+  }
   .education {
     height: 1200px;
   }
@@ -1548,7 +1693,7 @@ footer span a:hover {
     top: -5px;
   }
   .projects {
-    height: 700px;
+    height: 1000px;
   }
   .wrapper {
     position: relative;
@@ -1617,6 +1762,18 @@ footer span a:hover {
   .about .about-content .right .text {
     font-size: 19px;
   }
+  .container_exp{
+    display: grid;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  section .titlew::before{
+    left: 50%;
+    width: 320px;
+  }
+  .exp{
+    margin-bottom: 20px;
+  }
   .education {
     height: 850px;
   }
@@ -1680,7 +1837,7 @@ footer span a:hover {
     top: -5px;
   }
   .projects {
-    height: 700px;
+    height: 1000px;
   }
   .button-container-1 {
     width: 110%;
@@ -1714,6 +1871,7 @@ footer span a:hover {
   }
 }
 
+/* Responsive styling for Iphone 6/7/8 plus */
 @media (max-width: 415px) and (min-width: 400px) {
   .menu-btn {
     display: block;
@@ -1773,6 +1931,18 @@ footer span a:hover {
   }
   .about .about-content .right .text {
     font-size: 19px;
+  }
+  .container_exp{
+    display: grid;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  section .titlew::before{
+    left: 50%;
+    width: 215px;
+  }
+  .exp{
+    margin-bottom: 20px;
   }
   .education .education-content {
     display: grid;
@@ -1894,6 +2064,7 @@ footer span a:hover {
   }
 }
 
+/* Responsive styling for Iphone 12,X,6,7,8*/
 @media (max-width: 400px) {
   .home {
     background: url("Images/main_bg.jpg") no-repeat center;
@@ -1959,6 +2130,18 @@ footer span a:hover {
   }
   .about .about-content .right .text {
     font-size: 19px;
+  }
+  .container_exp{
+    display: grid;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  section .titlew::before{
+    left: 50%;
+    width: 215px;
+  }
+  .exp{
+    margin-bottom: 20px;
   }
   .education {
     height: 900px;
@@ -2068,7 +2251,6 @@ footer span a:hover {
     font-size: 9px;
     color: #fff;
   }
-
   .button-container-2 {
     width: 285px;
   }
@@ -2096,7 +2278,6 @@ footer span a:hover {
     font-size: 9px;
     color: #fff;
   }
-
   .button-container-4 button {
     background: url("Images/Iphone12,X,6,7,8/mobile_multiple_regression_bill_prediction.jpg");
   }
@@ -2116,3 +2297,4 @@ footer span a:hover {
     right: -33px;
   }
 }
+/* End of responsive styling */
